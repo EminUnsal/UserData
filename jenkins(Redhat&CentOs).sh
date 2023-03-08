@@ -10,3 +10,7 @@ systemctl daemon-reload
 systemctl enable jenkins
 systemctl start jenkins
 yum install git -y
+
+# systemctl status jenkins komutla jenkins giris sifresini ogrenebilirim
+# alternatif olarak sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+# journalctl ile servislerin loglarina bakabilirim $ journal -u jenkins.service
